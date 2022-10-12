@@ -2,10 +2,10 @@ import { Given } from "@cucumber/cucumber";
 import { expect } from "chai";
 
 Given(/^Login to inventory web app$/, async function() {
-  console.log(`Test username: ${process.env.TEST_STANDARD_USERNAME}`);
-  console.log(`Test password: ${process.env.TEST_STANDARD_PASSWORD}`);
   /** 1. Launch browser */
-  await browser.url("https://www.saucedemo.com");
+  // @ts-ignore
+  await browser.url(browser.config.sauseDemoURL);
+  console.log(`Test config values: ${JSON.stringify(browser.config)}`)
   await browser.setTimeout({
     implicit: 15000,
     pageLoad: 10000

@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 let headless = process.env.HEADLESS;
 //console.log(`Headless flag: ${headless}`);
+let debug = process.env.DEBUG;
 
 export const config: Options.Testrunner = {
     //
@@ -124,7 +125,7 @@ export const config: Options.Testrunner = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'error',
+    logLevel: debug.toUpperCase() === "Y" ? 'info' : 'error',
     //
     // Set specific log levels per logger
     // loggers:
@@ -381,3 +382,4 @@ export const config: Options.Testrunner = {
     // onReload: function(oldSessionId, newSessionId) {
     // }
 }
+
