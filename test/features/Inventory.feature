@@ -9,4 +9,4 @@ Feature: Inventory feature
 
     Examples:
       | TestID              | NumberOfProducts |
-      | VALIDATEPRICE_TC001 | 6                |
+      | INVENTORY_TC001     | 6                |
