@@ -86,7 +86,13 @@ export const config: Options.Testrunner = {
         maxInstances: 5,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true
+        "goog:chromeOptions": {
+          args: [
+            "--disable-web-security"
+          ],
+        },
+        acceptInsecureCerts: true,
+        timeouts: { implicit: 5000, pageLoad: 20000, script: 30000 },
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
