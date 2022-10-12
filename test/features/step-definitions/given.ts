@@ -1,11 +1,19 @@
 import { Given } from "@cucumber/cucumber";
-import { expect } from "chai";
+/* import { expect } from "chai";
+import logger from "../../helper/logger";
+import allure from "@wdio/allure-reporter"; */
+import reporter from "../../helper/reporter";
 
 Given(/^Login to inventory web app$/, async function() {
+  //Get the testid:
+  //console.log(`Given step Test ID: ${this.testid}`);
+  //const log = `${this.testid}: Started to login...`;
+  reporter.addStep(this.testid, "info", "Login started");
+  /* logger.info(log);
+  allure.addStep(log); */
   /** 1. Launch browser */
   // @ts-ignore
   await browser.url(browser.config.sauseDemoURL);
-  console.log(`Test config values: ${JSON.stringify(browser.config)}`)
   await browser.setTimeout({
     implicit: 15000,
     pageLoad: 10000
@@ -18,6 +26,12 @@ Given(/^Login to inventory web app$/, async function() {
   await browser.pause(1000);
   await $(`[data-test="login-button"]`).click();
   await browser.pause(1000);
+  //WORLD:
+  this.appid = "ABC123";
+  /* const finalLog = `${this.testid}: Login successful...`;
+  logger.info(finalLog);
+  allure.addStep(finalLog); */
+  reporter.addStep(this.testid, "info", "Login successful");
 });
 
 /** RELOAD EXAMPLE */
@@ -58,7 +72,6 @@ Given(/^try to login with several users$/, async function() {
     await browser.pause(1000);
     await $(`[data-test="login-button"]`).click();
   } catch(error) {
-    console.log(`Error in login: ${error}`);
     await browser.refresh();
     await browser.pause(1000);
     await $(`[data-test="username"]`).setValue("standard_user");
