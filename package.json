@@ -6,7 +6,10 @@
   "scripts": {
     "test": "npx wdio wdio.conf.ts",
     "wdio": "wdio run wdio.conf.js",
-    "repl": "npx wdio repl chrome"
+    "repl": "npx wdio repl chrome",
+    "demo": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@saucedemo'",
+    "nav": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@navigation'",
+    "inv": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'"
   },
   "keywords": [
     "wdio",
