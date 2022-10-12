@@ -82,6 +82,11 @@ typings/
 # Next.js build output
 .next
 
+# MacOS files
+.DS_Store
+test/.DS_Store
+*/.DS_Store
+
 # Nuxt.js build / generate output
 .nuxt
 dist

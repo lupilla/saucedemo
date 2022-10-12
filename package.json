@@ -12,7 +12,7 @@
     "inv": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'",
     "test:nav": "export DEBUG=N && export HEADLESS=Y && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@navigation'",
     "test:inv": "export DEBUG=N && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@inventory'",
-    "test:debug": "export DEBUG=Y && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@inventory'"
+    "test:debug": "export DEBUG=Y && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@inventory' > output.txt"
   },
   "keywords": [
     "wdio",
@@ -34,6 +34,7 @@
     "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4",
-    "wdio-chromedriver-service": "^8.0.0"
+    "wdio-chromedriver-service": "^8.0.0",
+    "winston": "^3.8.2"
   }
 }
