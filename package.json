@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio wdio.conf.ts",
-    "wdio": "wdio run wdio.conf.js"
+    "wdio": "wdio run wdio.conf.js",
+    "repl": "npx wdio repl chrome"
   },
   "keywords": [
     "wdio",

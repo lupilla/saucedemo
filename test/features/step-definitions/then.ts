@@ -37,3 +37,10 @@ Then(/^Validate all products have valid price$/, async function() {
   expect(invaldValues).to.be.empty;
   expect(invaldValues.length).to.equal(0);
 }); 
+
+Then(/^User go back to the login page with url (.*)$/, async function(loginUrl) {
+  const currentURL = await browser.getUrl();
+  expect(currentURL).to.equal(loginUrl);
+  await browser.forward();
+  await browser.pause(2000);
+}); 
