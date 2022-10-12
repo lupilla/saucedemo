@@ -1,7 +1,8 @@
 import type { Options } from '@wdio/types'
-
+import dotenv from 'dotenv';
+dotenv.config();
 let headless = process.env.HEADLESS;
-console.log(`Headless flag: ${headless}`);
+//console.log(`Headless flag: ${headless}`);
 
 export const config: Options.Testrunner = {
     //
