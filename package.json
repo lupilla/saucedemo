@@ -7,9 +7,9 @@
     "test": "npx wdio wdio.conf.ts",
     "wdio": "wdio run wdio.conf.js",
     "repl": "npx wdio repl chrome",
-    "demo": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@saucedemo'",
-    "nav": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@navigation'",
-    "inv": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'"
+    "demo": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@saucedemo'",
+    "nav": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@navigation'",
+    "inv": "export HEADLESS=Y && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'"
   },
   "keywords": [
     "wdio",
