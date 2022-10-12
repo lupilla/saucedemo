@@ -7,9 +7,12 @@
     "test": "npx wdio wdio.conf.ts",
     "wdio": "wdio run wdio.conf.js",
     "repl": "npx wdio repl chrome",
-    "demo": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@saucedemo'",
-    "nav": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@navigation'",
-    "inv": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'"
+    "demo": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@saucedemo'",
+    "nav": "export HEADLESS=Y && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@navigation'",
+    "inv": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@inventory'",
+    "test:nav": "export DEBUG=N && export HEADLESS=Y && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@navigation'",
+    "test:inv": "export DEBUG=N && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@inventory'",
+    "test:debug": "export DEBUG=Y && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@inventory'"
   },
   "keywords": [
     "wdio",
@@ -28,6 +31,7 @@
     "@wdio/spec-reporter": "^7.25.1",
     "chai": "^4.3.6",
     "chromedriver": "^106.0.1",
+    "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4",
     "wdio-chromedriver-service": "^8.0.0"

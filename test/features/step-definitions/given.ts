@@ -3,7 +3,9 @@ import { expect } from "chai";
 
 Given(/^Login to inventory web app$/, async function() {
   /** 1. Launch browser */
-  await browser.url("https://www.saucedemo.com");
+  // @ts-ignore
+  await browser.url(browser.config.sauseDemoURL);
+  console.log(`Test config values: ${JSON.stringify(browser.config)}`)
   await browser.setTimeout({
     implicit: 15000,
     pageLoad: 10000
@@ -11,8 +13,8 @@ Given(/^Login to inventory web app$/, async function() {
 
   await browser.pause(1000);
   /** 2. Login to inventory */
-  await $(`[data-test="username"]`).setValue("standard_user");
-  await $(`[data-test="password"]`).setValue("secret_sauce");
+  await $(`[data-test="username"]`).setValue(process.env.TEST_STANDARD_USERNAME);
+  await $(`[data-test="password"]`).setValue(process.env.TEST_STANDARD_PASSWORD);
   await browser.pause(1000);
   await $(`[data-test="login-button"]`).click();
   await browser.pause(1000);

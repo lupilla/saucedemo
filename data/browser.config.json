@@ -1,0 +1,103 @@
+{
+  "specs": [
+    "./test/features/*.feature"
+  ],
+  "suites": {},
+  "exclude": [],
+  "logLevel": "error",
+  "logLevels": {},
+  "excludeDriverLogs": [],
+  "bail": 0,
+  "waitforInterval": 500,
+  "waitforTimeout": 10000,
+  "framework": "cucumber",
+  "reporters": [
+    "spec",
+    [
+      "allure",
+      {
+        "outputDir": "allure-results"
+      }
+    ]
+  ],
+  "services": [
+    "chromedriver"
+  ],
+  "maxInstances": 10,
+  "maxInstancesPerCapability": 100,
+  "filesToWatch": [],
+  "connectionRetryTimeout": 120000,
+  "connectionRetryCount": 3,
+  "execArgv": [],
+  "runnerEnv": {},
+  "runner": "local",
+  "specFileRetries": 0,
+  "specFileRetriesDelay": 0,
+  "specFileRetriesDeferred": false,
+  "reporterSyncInterval": 100,
+  "reporterSyncTimeout": 5000,
+  "cucumberFeaturesWithLineNumbers": [],
+  "autoCompileOpts": {
+    "autoCompile": true,
+    "tsNodeOpts": {
+      "transpileOnly": true,
+      "project": "tsconfig.json"
+    },
+    "babelOpts": {}
+  },
+  "mochaOpts": {
+    "timeout": 10000
+  },
+  "jasmineOpts": {
+    "defaultTimeoutInterval": 10000
+  },
+  "cucumberOpts": {
+    "timeout": 60000,
+    "require": [
+      "./test/features/step-definitions/*.ts"
+    ],
+    "backtrace": false,
+    "requireModule": [],
+    "dryRun": false,
+    "failFast": false,
+    "snippets": true,
+    "source": true,
+    "strict": false,
+    "tagExpression": "@inventory",
+    "ignoreUndefinedDefinitions": false
+  },
+  "onPrepare": [],
+  "onWorkerStart": [],
+  "onWorkerEnd": [],
+  "before": [],
+  "beforeSession": [],
+  "beforeSuite": [],
+  "beforeHook": [],
+  "beforeTest": [],
+  "beforeCommand": [],
+  "afterCommand": [],
+  "afterTest": [],
+  "afterHook": [],
+  "afterSuite": [],
+  "afterSession": [],
+  "after": [],
+  "onComplete": [],
+  "onReload": [],
+  "beforeFeature": [],
+  "beforeScenario": [],
+  "beforeStep": [],
+  "afterStep": [],
+  "afterScenario": [],
+  "afterFeature": [],
+  "baseUrl": "http://localhost",
+  "environment": "TEST",
+  "sauseDemoURL": "https://www.saucedemo.com",
+  "_": [
+    "config/wdio.test.conf.ts"
+  ],
+  "cucumber-opts": {
+    "tagExpression": "@inventory"
+  },
+  "$0": "node_modules/.bin/wdio",
+  "ignoredWorkerServices": []
+}
