@@ -1,0 +1,246 @@
+
+Execution of 4 workers started at 2022-10-13T09:57:16.757Z
+
+2022-10-13T09:57:16.763Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-10-13T09:57:16.816Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-10-13T09:57:16.820Z INFO chromedriver: Start Chromedriver (/Users/guadalupesanchez/Desktop/webdriverio/saucedemo/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=9515 --url-base=/
+2022-10-13T09:57:16.848Z INFO chromedriver: Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 9515
+2022-10-13T09:57:16.849Z INFO chromedriver: Only local connections are allowed.
+2022-10-13T09:57:16.849Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2022-10-13T09:57:16.861Z INFO chromedriver: ChromeDriver was started successfully.
+2022-10-13T09:57:16.935Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-10-13T09:57:16.935Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-10-13T09:57:16.935Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-10-13T09:57:16.935Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-10-13T09:57:16.936Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@inventory
+2022-10-13T09:57:16.942Z INFO @wdio/local-runner: Start worker 0-1 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@inventory
+2022-10-13T09:57:16.947Z INFO @wdio/local-runner: Start worker 0-2 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@inventory
+2022-10-13T09:57:16.953Z INFO @wdio/local-runner: Start worker 0-3 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression=@inventory
+[0-0] [90m2022-10-13T09:57:17.541Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-1] [90m2022-10-13T09:57:17.554Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-2] [90m2022-10-13T09:57:17.594Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-3] [90m2022-10-13T09:57:17.614Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-1] RUNNING in chrome - /test/features/Inventory.feature
+[0-1] [90m2022-10-13T09:57:18.620Z[39m [96mINFO[39m [97mwebdriver[39m: Initiate new session using the WebDriver protocol
+[0-1] [90m2022-10-13T09:57:18.684Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session
+[0-1] [90m2022-10-13T09:57:18.684Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   capabilities: {
+[0-1]     alwaysMatch: {
+[0-1]       browserName: 'chrome',
+[0-1]       'goog:chromeOptions': [Object],
+[0-1]       acceptInsecureCerts: true,
+[0-1]       timeouts: [Object]
+[0-1]     },
+[0-1]     firstMatch: [ {} ]
+[0-1]   },
+[0-1]   desiredCapabilities: {
+[0-1]     browserName: 'chrome',
+[0-1]     'goog:chromeOptions': { args: [] },
+[0-1]     acceptInsecureCerts: true,
+[0-1]     timeouts: { implicit: 5000, pageLoad: 20000, script: 30000 }
+[0-1]   }
+[0-1] }
+2022-10-13T09:57:18.735Z INFO @wdio/cli: [0-0] SKIPPED in chrome - /test/features/CucumberDemo.feature
+2022-10-13T09:57:18.735Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-10-13T09:57:18.748Z INFO @wdio/cli: [0-2] SKIPPED in chrome - /test/features/Login.feature
+2022-10-13T09:57:18.748Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-10-13T09:57:18.773Z INFO @wdio/cli: [0-3] SKIPPED in chrome - /test/features/Navigation.feature
+2022-10-13T09:57:18.773Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+[0-1] [[32mINFO[39m]: [INVENTORY_TC001]: Login started
+[0-1] [90m2022-10-13T09:57:20.512Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m navigateTo("https://www.saucedemo.com/")
+[0-1] [90m2022-10-13T09:57:20.512Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/url
+[0-1] [90m2022-10-13T09:57:20.512Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { url: 'https://www.saucedemo.com/' }
+[0-1] [90m2022-10-13T09:57:20.668Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "[data-test="username"]")
+[0-1] [90m2022-10-13T09:57:20.668Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element
+[0-1] [90m2022-10-13T09:57:20.668Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '[data-test="username"]' }
+[0-1] [90m2022-10-13T09:57:20.734Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': 'c269af5f-d611-472c-9ef0-9991362fcd1b'
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.740Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2022-10-13T09:57:20.740Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/execute/sync
+[0-1] [90m2022-10-13T09:57:20.740Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'isElementDisplayed(...) [7956 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': 'c269af5f-d611-472c-9ef0-9991362fcd1b',
+[0-1]       ELEMENT: 'c269af5f-d611-472c-9ef0-9991362fcd1b'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.748Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m true
+[0-1] [90m2022-10-13T09:57:20.749Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("c269af5f-d611-472c-9ef0-9991362fcd1b")
+[0-1] [90m2022-10-13T09:57:20.749Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/c269af5f-d611-472c-9ef0-9991362fcd1b/clear
+[0-1] [90m2022-10-13T09:57:20.783Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("c269af5f-d611-472c-9ef0-9991362fcd1b", "standard_user")
+[0-1] [90m2022-10-13T09:57:20.783Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/c269af5f-d611-472c-9ef0-9991362fcd1b/value
+[0-1] [90m2022-10-13T09:57:20.783Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'standard_user' }
+[0-1] [[32mINFO[39m]: [INVENTORY_TC001]: Username: standard_user entered successfully
+[0-1] [90m2022-10-13T09:57:20.863Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "[data-test="password"]")
+[0-1] [90m2022-10-13T09:57:20.863Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element
+[0-1] [90m2022-10-13T09:57:20.863Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '[data-test="password"]' }
+[0-1] [90m2022-10-13T09:57:20.871Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '605d9b7a-e43d-4d7a-aca9-bb912c74a193'
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.874Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2022-10-13T09:57:20.874Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/execute/sync
+[0-1] [90m2022-10-13T09:57:20.874Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'isElementDisplayed(...) [7956 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '605d9b7a-e43d-4d7a-aca9-bb912c74a193',
+[0-1]       ELEMENT: '605d9b7a-e43d-4d7a-aca9-bb912c74a193'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.881Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m true
+[0-1] [90m2022-10-13T09:57:20.881Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("605d9b7a-e43d-4d7a-aca9-bb912c74a193")
+[0-1] [90m2022-10-13T09:57:20.881Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/605d9b7a-e43d-4d7a-aca9-bb912c74a193/clear
+[0-1] [90m2022-10-13T09:57:20.907Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("605d9b7a-e43d-4d7a-aca9-bb912c74a193", "secret_sauce")
+[0-1] [90m2022-10-13T09:57:20.907Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/605d9b7a-e43d-4d7a-aca9-bb912c74a193/value
+[0-1] [90m2022-10-13T09:57:20.907Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'secret_sauce' }
+[0-1] [[32mINFO[39m]: [INVENTORY_TC001]: Password entered successfully
+[0-1] [90m2022-10-13T09:57:20.953Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "[data-test="login-button"]")
+[0-1] [90m2022-10-13T09:57:20.953Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element
+[0-1] [90m2022-10-13T09:57:20.954Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '[data-test="login-button"]' }
+[0-1] [90m2022-10-13T09:57:20.965Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': 'ff8cc044-5250-496f-a5ce-6f7ee564c859'
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.967Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2022-10-13T09:57:20.967Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/execute/sync
+[0-1] [90m2022-10-13T09:57:20.967Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'isElementDisplayed(...) [7956 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': 'ff8cc044-5250-496f-a5ce-6f7ee564c859',
+[0-1]       ELEMENT: 'ff8cc044-5250-496f-a5ce-6f7ee564c859'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.975Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m true
+[0-1] [90m2022-10-13T09:57:20.975Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2022-10-13T09:57:20.975Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/execute/sync
+[0-1] [90m2022-10-13T09:57:20.975Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'isElementClickable(...) [5349 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': 'ff8cc044-5250-496f-a5ce-6f7ee564c859',
+[0-1]       ELEMENT: 'ff8cc044-5250-496f-a5ce-6f7ee564c859'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] [90m2022-10-13T09:57:20.980Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m true
+[0-1] [90m2022-10-13T09:57:20.980Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClick("ff8cc044-5250-496f-a5ce-6f7ee564c859")
+[0-1] [90m2022-10-13T09:57:20.980Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/ff8cc044-5250-496f-a5ce-6f7ee564c859/click
+[0-1] [[32mINFO[39m]: [INVENTORY_TC001]: Login successful
+[0-1] [90m2022-10-13T09:57:21.060Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item")
+[0-1] [90m2022-10-13T09:57:21.060Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/elements
+[0-1] [90m2022-10-13T09:57:21.060Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item' }
+[0-1] [90m2022-10-13T09:57:21.084Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '527e63a5-95cc-4fac-9be6-5803f7514db1'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': 'dd62c6b0-b3ef-477d-bc57-873d8cba3a01'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': 'f297308e-6021-4a47-b124-5ec15add6113'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': 'd49acfb6-1376-4cb3-8bd8-ca12289642d2'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '8a5ba71e-6169-4646-a187-78bca7f576b6'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '488bf7ba-e15d-4502-8699-fe40f4635c6f'
+[0-1]   }
+[0-1] ]
+[0-1] [90m2022-10-13T09:57:21.090Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_name")
+[0-1] [90m2022-10-13T09:57:21.090Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/elements
+[0-1] [90m2022-10-13T09:57:21.090Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_name' }
+[0-1] [90m2022-10-13T09:57:21.102Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '0d0b7056-d81d-4cf0-892d-36b43092b06e'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '016ff291-6f76-4691-a72b-a3a6cea2f8c8'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '6a0ce748-887d-4867-b2d3-bdd94a5babda'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '97200653-9822-4cc5-823d-0dc6b184fe86'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '6ab0ce07-2b25-4c99-af97-996fc1bfd024'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '247321fe-b00c-4cd7-8b93-c644f9d08fe7'
+[0-1]   }
+[0-1] ]
+[0-1] [90m2022-10-13T09:57:21.107Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_price")
+[0-1] [90m2022-10-13T09:57:21.108Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/elements
+[0-1] [90m2022-10-13T09:57:21.108Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_price' }
+[0-1] [90m2022-10-13T09:57:21.117Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '72bac3ff-848e-4ba7-86bd-d7a2b630611f'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '59d37b69-6b8a-4934-94be-f6068cc0549c'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '3e3cceb0-6bea-47a9-8d18-ca392d3e3df7'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '305734e3-c48d-48e4-97c7-c5605a72387c'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '4b612a8c-34c3-48f6-b15c-1dac95658a03'
+[0-1]   },
+[0-1]   {
+[0-1]     'element-6066-11e4-a52e-4f735466cecf': '5c9f60a8-ff7f-4e2b-8d32-f810c3c55f04'
+[0-1]   }
+[0-1] ]
+[0-1] [90m2022-10-13T09:57:21.124Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("72bac3ff-848e-4ba7-86bd-d7a2b630611f")
+[0-1] [90m2022-10-13T09:57:21.124Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/72bac3ff-848e-4ba7-86bd-d7a2b630611f/text
+[0-1] [90m2022-10-13T09:57:21.136Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $29.99
+[0-1] [90m2022-10-13T09:57:21.136Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("59d37b69-6b8a-4934-94be-f6068cc0549c")
+[0-1] [90m2022-10-13T09:57:21.136Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/59d37b69-6b8a-4934-94be-f6068cc0549c/text
+[0-1] [90m2022-10-13T09:57:21.146Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $9.99
+[0-1] [90m2022-10-13T09:57:21.147Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("3e3cceb0-6bea-47a9-8d18-ca392d3e3df7")
+[0-1] [90m2022-10-13T09:57:21.147Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/3e3cceb0-6bea-47a9-8d18-ca392d3e3df7/text
+[0-1] [90m2022-10-13T09:57:21.157Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
+[0-1] [90m2022-10-13T09:57:21.157Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("305734e3-c48d-48e4-97c7-c5605a72387c")
+[0-1] [90m2022-10-13T09:57:21.157Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/305734e3-c48d-48e4-97c7-c5605a72387c/text
+[0-1] [90m2022-10-13T09:57:21.168Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $49.99
+[0-1] [90m2022-10-13T09:57:21.168Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("4b612a8c-34c3-48f6-b15c-1dac95658a03")
+[0-1] [90m2022-10-13T09:57:21.169Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/4b612a8c-34c3-48f6-b15c-1dac95658a03/text
+[0-1] [90m2022-10-13T09:57:21.179Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $7.99
+[0-1] [90m2022-10-13T09:57:21.179Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("5c9f60a8-ff7f-4e2b-8d32-f810c3c55f04")
+[0-1] [90m2022-10-13T09:57:21.179Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85/element/5c9f60a8-ff7f-4e2b-8d32-f810c3c55f04/text
+[0-1] [90m2022-10-13T09:57:21.189Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
+[0-1] [90m2022-10-13T09:57:21.196Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m deleteSession()
+[0-1] [90m2022-10-13T09:57:21.197Z[39m [96mINFO[39m [97mwebdriver[39m: [DELETE] http://localhost:9515/session/4bf85dc69c3c52cbd2978919bc1b2b85
+[0-1] PASSED in chrome - /test/features/Inventory.feature
+2022-10-13T09:57:21.363Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-10-13T09:57:21.364Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 106.0.5249.119 mac os x #0-1] Running: chrome (v106.0.5249.119) on mac os x
+[chrome 106.0.5249.119 mac os x #0-1] Session ID: 4bf85dc69c3c52cbd2978919bc1b2b85
+[chrome 106.0.5249.119 mac os x #0-1]
+[chrome 106.0.5249.119 mac os x #0-1] » /test/features/Inventory.feature
+[chrome 106.0.5249.119 mac os x #0-1] Inventory feature
+[chrome 106.0.5249.119 mac os x #0-1] INVENTORY_TC001: Inventory feature
+[chrome 106.0.5249.119 mac os x #0-1]    [32m✓[39m Given Login to inventory web app
+[chrome 106.0.5249.119 mac os x #0-1]    [32m✓[39m Then Inventory page should list 6 products
+[chrome 106.0.5249.119 mac os x #0-1]    [32m✓[39m Then Validate all products have valid price
+[chrome 106.0.5249.119 mac os x #0-1]
+[chrome 106.0.5249.119 mac os x #0-1] [32m3 passing (1.1s)[39m
+
+
+Spec Files:	 1 passed, 3 skipped, 4 total (100% completed) in 00:00:04 
+
+2022-10-13T09:57:21.364Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-10-13T09:57:21.615Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2022-10-13T09:57:21.615Z INFO @wdio/local-runner: shutting down
